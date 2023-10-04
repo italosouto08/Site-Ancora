@@ -1,0 +1,439 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+
+}
+
+html{
+  scroll-behavior: smooth;  
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr 200px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#nav #btnMobile{
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 3rem;
+  font-weight: 700;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff; 
+}
+
+.social-menu{
+  display: none;
+}
+
+header .fa{
+  display: block;
+}
+
+
+nav>ul {
+  display: flex;
+}
+
+nav>ul a {
+  display: block;
+  padding: 35px 20px;
+}
+
+header a:hover{
+  color: #5C8B62;
+  transform: scale(1.05);
+}
+
+header .header-profile>.avatar-img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+}
+
+#section-inicio {
+  background: url(../assets/wavey-fingerprint.svg);
+  background-position: center;
+  padding: 15% 5%;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 50px;
+  text-align: center;
+  color: #5C8B62;
+}
+
+#section-inicio>h1 {
+  font-size: 50px;
+}
+
+#section-inicio>p {
+  font-size: 1.6rem;
+}
+
+#section-inicio>.btn {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#section-inicio>.btn>a {
+  background-color: #737373;
+  color: white;
+  padding: 20px 70px;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+#section-sobre{
+  background-color: rgb(235, 235, 235);
+  padding: 15% 5%;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 100px;
+  text-align: center;
+  color: black;
+  
+}
+
+#section-sobre>h1{
+  font-size: 2rem;
+}
+
+#section-sobre p{
+ text-align: justify;
+ padding-right: 10rem;
+}
+
+
+#section-sobre>.colums-sobre{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.section-sobre-esquerda>.btn1>a {
+  background-color:#737373;
+  color: white;
+  padding: 20px 70px;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+.section-sobre-esquerda{
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 50px;
+  text-align: start;
+  font-size: 1.2rem ;
+}
+
+
+.section-sobre-direita li{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem;
+  width: 60px;
+  margin: 20px;
+  border-radius: 10%;
+  background: rgba(153, 153, 153, 0.2);
+  color: #777;
+  font-weight: 600;
+}
+
+.section-sobre-direita ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  margin: 10px;
+  justify-content: flex-start;
+}
+
+
+
+#section-projetos{
+  background-color: #FFFFFF;
+  padding: 15% 5%;
+  align-items: center;  
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 100px;
+  text-align: center;
+  color: black;
+}
+
+#section-projetos>h1{
+  font-size: 2rem;
+}
+
+#section-projetos>.projeto-1{
+  display: grid;
+  grid-template-columns: 50% 30%;
+  column-gap: 100px;
+}
+
+.descricao-projeto-1 h3{
+  margin: 20px;
+  text-align: center;
+}
+
+#section-projetos>p {
+  font-size: 1.4rem;
+}
+
+#section-contato {
+  background: url(../assets/wavey-fingerprint.svg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15% 5%;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 50px;
+  text-align: center;
+}
+
+#section-contato>h1{
+  font-size: 2rem;
+}
+
+#section-contato > h1,
+#section-contato .subtitle {
+  color: #fff;
+}
+
+
+#section-contato form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 3rem;
+  border-radius: 5px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10rem;
+  margin-top: 5rem;
+  text-align: start;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div > a{
+  background-color: #737373 ;
+  color: white;
+  padding: 20px 70px;
+  border-radius: 7px;
+  font-weight: 700;
+  text-align: center;
+  
+}
+
+form label {
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+
+form input,textarea {
+  color: #333;
+  font-size: 1.1rem;
+  padding: 1.6rem;
+  border: 1px solid #ebebeb;
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  resize: none;
+}
+
+/* footer */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 0px 6rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.footer-top .footer-top-content {
+  width: 40%;
+}
+.footer-top h4 {
+  margin-bottom: 1.6rem;
+}
+.footer-top p {
+  color: #eee;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.footer-top i {
+  font-size: 1.6rem;
+  padding: 0rem 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: center;
+  padding: 2.6rem 0;
+  font-size: 0.7rem;
+  background-color: #000;
+}
+.footer-bottom strong {
+  text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  #section {
+    padding: 10rem 1.4rem;
+  }
+  .subtitle {
+    margin: 0px 0px;
+  }
+  
+  header .fa {
+    display: block;
+    font-size: 1.8rem;
+    padding: 2.2rem 1rem;
+    align-self: center;
+    cursor: pointer;
+  }
+  
+  header {
+    padding: 0px 2rem;
+  }
+  
+  #menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    right: 0px;
+    height: 0px;
+    z-index: 1000;
+    transition: .6s ;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu a {
+    border-bottom: 2px solid #737373 ;
+  }
+
+  #nav #btnMobile{
+    display: block;
+  }
+
+  #nav.active #menu{
+    visibility: visible;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  #menu .social-menu{
+    display: flex;
+    justify-content: center;   
+  }
+
+
+  header .fa {
+    display: block;
+    font-size: 1.8rem;
+    padding: 2.2rem 2rem;
+    align-self: center;
+    cursor: pointer;
+    background-color: white;
+    
+  }
+  #section-inicio p {
+    margin: 0px;
+  }
+  #section-inicio{
+    padding-top: 20rem;
+  }
+  #section-sobre .colums-sobre {
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+  }
+  #section-sobre{
+    text-align: center;
+  }
+  
+  #section-projetos ul li {
+    
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+  }
+  #section-projetos .conteudo-projetos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  #section-contato form {
+    padding: 2rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+
+  #section-contato input,
+  #section-contato textarea {
+    color: #333;
+  }
+  #section-contact button {
+    align-self: stretch;
+    font-size: 0.9rem;
+  }
+  footer {
+    padding: 0px 1.6rem;
+  }
+  footer .footer-top {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .footer-top > div:first-child {
+    width: auto;
+  }
+}
+
