@@ -395,6 +395,20 @@ footer {
     grid-template-columns: 1fr;
     row-gap: 100px;
   }
+
+  .colums-sobre .section-sobre-direita ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  .colums-sobre .section-sobre-esquerda {
+    text-align: center;
+  }
+
+  #section-sobre p{
+    padding: 2rem;
+  }
+
   #section-sobre{
     text-align: center;
   }
@@ -404,6 +418,11 @@ footer {
     grid-template-columns: 1fr;
     row-gap: 1.6rem;
   }
+
+  .conteudo-projetos img{
+    width: 25rem;
+  }
+
   #section-projetos .conteudo-projetos {
     display: flex;
     align-items: center;
